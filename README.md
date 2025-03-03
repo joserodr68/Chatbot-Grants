@@ -102,28 +102,6 @@ The system consists of the following main components:
 - Python 3.9+
 - Git
 
-### Environment Configuration
-1. Clone the repository
-   ```bash
-   git clone https://github.com/AI-School-F5-P3/ChatbotGrants.git
-   cd ChatbotGrants
-   ```
-
-2. Configure environment variables
-   ```bash
-   # In backend directory
-   cp .env.example .env
-   # Edit .env with your credentials
-
-   # In etl_fandit directory
-   cp .env.example .env
-   # Edit .env with your Fandit API credentials
-   ```
-
-3. Start the services
-   ```bash
-   docker-compose up -d
-   ```
 
 ### Project Structure
 ```
@@ -153,14 +131,7 @@ ChatbotGrants/
 │       ├── services/           # API services
 │       └── assets/             # Styles and images
 │
-└── etl_fandit/                 # ETL system for Fandit API
-    ├── clase_apifandit.py      # Fandit API client
-    ├── db_setup.py             # Database initialization
-    ├── etl_fandit.py           # Main ETL process implementation
-    ├── Dockerfile              # ETL container definition
-    ├── requirements.txt        # ETL dependencies
-    ├── README.md               # ETL documentation
-    └── tests/                  # ETL test directory
+
 ```
 
 ## 📝 API and Resources
